@@ -8,6 +8,7 @@ class LandmarksController < ApplicationController
   end
 
   get "/landmarks/:id" do
+    erb :"landmarks/show"
   end
 
   post "/landmarks/new" do
