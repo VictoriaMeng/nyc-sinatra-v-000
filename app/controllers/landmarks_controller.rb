@@ -23,6 +23,7 @@ class LandmarksController < ApplicationController
   end
 
   patch "/landmarks/:id/edit" do
+    binding.pry
   end
 
 
