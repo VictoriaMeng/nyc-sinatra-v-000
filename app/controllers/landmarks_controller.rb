@@ -23,7 +23,9 @@ class LandmarksController < ApplicationController
   end
 
   patch "/landmarks/:id/edit" do
-    @landmark = Landmark.find_or_create_by
+    @landmark = Landmark.find(params[:id])
+    @landmark.update(name: params[:name]) unless params[:name].empty?
+    @landmark.update(name: params[:])
     binding.pry
   end
 
