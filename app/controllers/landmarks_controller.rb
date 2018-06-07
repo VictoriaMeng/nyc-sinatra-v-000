@@ -23,6 +23,7 @@ class LandmarksController < ApplicationController
   end
 
   patch "/landmarks/:id/edit" do
+    @landmark = Landmark.find_or_create_by
     binding.pry
   end
 
