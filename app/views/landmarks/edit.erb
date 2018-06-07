@@ -1,6 +1,9 @@
+<%=  %>
+
 <form method="post" action="/landmarks/<%= landmark.id %>/edit">
   <input id="hidden" type="hidden" name="_method" value="patch">
-  <input type="text" name="landmark[name]">
+  Landmark Name: <input type="text" name="landmark[name]">
+  Year Completed: <input type="text" name="landmark[year_completed]">
   <input type="submit">
 </form>
 <!-- expect(last_response.body).to include('<form')
