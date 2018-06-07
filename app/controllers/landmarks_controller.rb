@@ -12,6 +12,9 @@ class LandmarksController < ApplicationController
     erb :"landmarks/show"
   end
 
+  get "landmarks/:id/edit" do
+  end
+
   post "/landmarks/new" do
     @landmark = Landmark.find_or_create_by(params[:landmark])
     redirect "/landmarks/#{@landmark.id}"
